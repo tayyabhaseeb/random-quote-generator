@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #0059ff;
+  color: black;
+  font-size: 23px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.quote-box {
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: white;
+  padding: 5% 5%;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.author {
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  font-weight: 600;
+}
+
+/* .buttons {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+} */
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #0059ff;
+  /* background: #55acee; */
   color: white;
+  padding: 6px 4px;
+  border-radius: 2px;
+  margin-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-twitter {
+  background: #0059ff;
+  /* background: #55acee; */
+  color: white;
+  padding: 6px 4px;
+  border-radius: 2px;
+  margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fa-twitter:hover {
+  opacity: 0.7;
+}
+
+button {
+  margin-top: 30px;
+  background: #0059ff;
+  border: none;
+  padding: 12.65px;
+
+  text-align: center;
+
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
 }
